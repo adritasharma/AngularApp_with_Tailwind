@@ -1,15 +1,19 @@
+const { guessProductionMode } = require("@ngneat/tailwind");
+
 module.exports = {
-    important: true,
+    prefix: '',
     purge: {
-        enabled: process.env.NODE_ENV === "production",
-        content: ["./src/**/*.{html,ts}"],
+      enabled: guessProductionMode(),
+      content: [
+        './src/**/*.{html,ts}',
+      ]
     },
     darkMode: false, // or 'media' or 'class'
     theme: {
-        extend: {},
+      extend: {},
     },
     variants: {
-        extend: {},
+      extend: {},
     },
     plugins: [],
 };

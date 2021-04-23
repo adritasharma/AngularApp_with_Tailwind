@@ -1,0 +1,5 @@
+@import 'tailwindcss/dist/utilities';
+
+.header {
+   @apply bg-red-300 border-b;
+}
