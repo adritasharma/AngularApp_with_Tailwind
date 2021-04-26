@@ -1,5 +1,15 @@
-@import 'tailwindcss/dist/utilities';
+:host{
+    @apply block;
+}
 
 .header {
-   @apply bg-red-300 border-b;
+   @apply bg-red-300 text-white border-b border-gray-200;
+
+   &-container {
+    @apply py-4 flex justify-between items-center
+   }
+
+   &-brand {
+    @apply flex items-center
+   }
 }
