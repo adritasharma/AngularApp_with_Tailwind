@@ -12,8 +12,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  onHamburgerBtnClick(){
-    const navToggle = document.getElementsByClassName("toggle");
+  onToggleBtnClick(className:string){
+    const navToggle = document.getElementsByClassName(className);
     for (let i = 0; i < navToggle.length; i++) {
       navToggle.item(i).classList.toggle("hidden");
     }

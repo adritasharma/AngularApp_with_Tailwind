@@ -1,3 +1,4 @@
+<!-- Reference:  https://w3collective.com/responsive-navbar-tailwind-css/ -->
 <nav class="header">
   <div class="container header-container">
 
@@ -6,25 +7,43 @@
 
     <!-- hamburger -->
     <div class="flex md:hidden">
-      <button id="hamburger" (click)="onHamburgerBtnClick()">
-        <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40"
-          height="40" />
-        <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40"
-          height="40" />
+      <button (click)="onToggleBtnClick('hamburger-toggle')">
+        <img class="hamburger-toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
+          width="40" height="40" />
+        <img class="hamburger-toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
+          width="40" height="40" />
       </button>
     </div>
-    
+
     <!-- links -->
-    <div
-      class="toggle hidden header-links-wrapper">
-      <a href="#"
-        class="header-link">Home</a>
-      <a href="#"
-        class="header-link">Products</a>
-      <a href="#"
-        class="header-link">Pricing</a>
-      <a href="#"
-        class="header-link">Contact</a>
-    </div>
+    <ul class="hamburger-toggle hidden header-links-wrapper">
+      <li href="#" class="header-link">Home</li>
+      <li href="#" class="header-link">Normal</li>
+      <li class="header-link relative">
+        <span class="flex" (click)="onToggleBtnClick('menu-toggle')">
+          Click
+          <span class="menu-toggle block pt-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </span>
+          <span class="menu-toggle hidden pt-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+            </svg>
+          </span>
+        </span>
+        <div class="menu-toggle hidden absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl">
+          <a href="#"
+            class="transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-purple-300 hover:text-white">Settings</a>
+          <div class="py-2">
+          </div>
+          <a href="#"
+            class="transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-purple-300 hover:text-white">
+            Logout
+          </a>
+        </div>
+      </li>
+    </ul>
   </div>
 </nav>

@@ -1,5 +1,5 @@
 .header {
-  @apply bg-blue-200;
+  @apply bg-purple-300;
 
   &-container {
     @apply flex flex-wrap items-center justify-between
@@ -10,6 +10,6 @@
   }
 
   &-link {
-      @apply block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none;
+      @apply cursor-pointer block md:inline-block text-purple-900 hover:text-white px-3 py-3 border-b-2 border-blue-900 md:border-none;
   }
 }
