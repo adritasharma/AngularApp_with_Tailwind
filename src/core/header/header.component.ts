@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +10,13 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onHamburgerBtnClick(){
+    const navToggle = document.getElementsByClassName("toggle");
+    for (let i = 0; i < navToggle.length; i++) {
+      navToggle.item(i).classList.toggle("hidden");
+    }
   }
 
 }

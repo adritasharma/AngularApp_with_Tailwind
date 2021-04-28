@@ -1,12 +1,30 @@
-<div class="header">
+<nav class="header">
   <div class="container header-container">
-    <div class="header-brand">
-      <a class="header-logo">
-        😀
-      </a>
-      <span class="header-title">
-        Tailwind ~ Angular
-      </span>
+
+    <!-- logo -->
+    <img src="http://acmelogos.com/images/logo-1.svg" alt="ACME" width="120" />
+
+    <!-- hamburger -->
+    <div class="flex md:hidden">
+      <button id="hamburger" (click)="onHamburgerBtnClick()">
+        <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40"
+          height="40" />
+        <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40"
+          height="40" />
+      </button>
+    </div>
+    
+    <!-- links -->
+    <div
+      class="toggle hidden header-links-wrapper">
+      <a href="#"
+        class="header-link">Home</a>
+      <a href="#"
+        class="header-link">Products</a>
+      <a href="#"
+        class="header-link">Pricing</a>
+      <a href="#"
+        class="header-link">Contact</a>
     </div>
   </div>
-</div>
+</nav>
