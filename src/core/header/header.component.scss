@@ -12,4 +12,13 @@
   &-link {
       @apply cursor-pointer block md:inline-block text-purple-900 hover:text-white px-3 py-3 border-b-2 border-blue-900 md:border-none;
   }
+
+  &-sub-menu-wrapper{
+    @apply absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl;
+  }
+
+  &-sub-menu-link{
+    @apply transition-colors duration-200 block px-4 py-2  text-purple-900 rounded hover:bg-purple-300 hover:text-white;
+  }
+
 }
