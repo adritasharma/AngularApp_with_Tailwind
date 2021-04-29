@@ -1,0 +1,7 @@
+.links {
+    @apply underline text-purple-500 hover:text-purple-900;
+}
+
+.is-active{
+    @apply text-purple-900;
+}

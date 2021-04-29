@@ -1,8 +1,10 @@
 <app-header></app-header>
 <main class="main-content container">
-    <ol class="">
-        <li><a routerLink="features/flexbox">Flex Box</a> </li>
-        <li><a routerLink="features/grid">Grid</a> </li>
-    </ol>
+
+    <ul class="list-disc ml-20 my-10">
+        <li><a class="links" routerLinkActive="is-active" routerLink="features/flexbox">Flex Box</a> </li>
+        <li><a class="links" routerLinkActive="is-active" routerLink="features/grid">Grid</a> </li>
+    </ul>
+
     <router-outlet></router-outlet>
 </main>
