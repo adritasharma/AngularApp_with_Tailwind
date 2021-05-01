@@ -1,0 +1,11 @@
+.demo-box{
+    @apply bg-purple-400 text-white text-center py-3 text-2xl justify-center m-4 p-10;
+}
+
+.headline {
+    @apply text-lg text-center text-purple-500 font-bold py-5 mt-7;
+}
+
+.demo-container {
+    @apply m-10 p-20 bg-purple-100
+}

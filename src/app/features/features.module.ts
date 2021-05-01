@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FlexboxComponent } from './flexbox/flexbox.component';
 import { FeaturesRoutingModule } from './features.routing.module';
 import { GridComponent } from './grid/grid.component';
+import { BoxAlignmentComponent } from './box-alignment/box-alignment.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,8 @@ import { GridComponent } from './grid/grid.component';
   ],
   declarations: [
     FlexboxComponent,
-    GridComponent
+    GridComponent,
+    BoxAlignmentComponent
   ]
 })
 export class FeaturesModule { }
